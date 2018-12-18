@@ -49,10 +49,9 @@ console.log("\n Level 3");
 
 //Lv 3
 const lv3 = names => {
-  const search_name = (names, name) =>
-    names.includes(name) ? console.log(name) : console.log(`Not Found!`);
-
-  search_name(names, "Abdul");
+  const search_name = name =>
+    names.filter(x => (x.includes(name) ? console.log(x) : ""));
+  search_name("Hakim");
 };
 
 lv3(names);
